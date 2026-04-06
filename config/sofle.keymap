@@ -54,6 +54,43 @@
     behaviors {
     };
 
+    macros {
+        bracket_close: bracket_close {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LC(LEFT_BRACKET))>;
+            label = "BRACKET_CLOSE";
+        };
+
+        open_bracket: open_bracket {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LC(RIGHT_BRACKET))>;
+            label = "OPEN_BRACKET";
+        };
+
+        spotlight: spotlight {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LA(SPACE))>;
+            label = "SPOTLIGHT";
+        };
+
+        alt_f4: alt_f4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(F4)>;
+            label = "ALT_F4";
+        };
+
+        sao_menu: sao_menu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LG(LA(W)))>;
+            label = "SAO_MENU";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
